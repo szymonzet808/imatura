@@ -1,0 +1,90 @@
+.login-page {
+    height: 350px;
+    width: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    -webkit-animation: fade-in 0.35s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 0.35s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-log-google {
+    height: 36px;
+    width: 275px;
+    font-size: 18px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all .2s;
+    margin-top: 10px;
+}
+
+.btn-log-google:hover {
+    background-color: rgb(194, 18, 53);
+}
+
+.log-input {
+    border: 1px solid lightgray;
+    height: 24px;
+    width: 250px;
+    outline: none;
+    padding: 6px 12px;
+    transition: all .3s;
+    border-radius: 3px 0px 0px 3px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login-page>h2 {
+    margin-bottom: 20px;
+}
+
+.login-page>div {
+    position: relative;
+}
+
+.login-page>div>i {
+    position: absolute;
+    left: -25px;
+    top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .login-page {
+        width: 400px;
+    }
+}
+
+
+
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

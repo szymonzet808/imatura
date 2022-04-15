@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+body {
+  margin: 0;
+  background-color: #F8F6F8;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+.video-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  opacity: 0.1;
+  /* or whatever you want */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+  font-size: 13px;
+  color: rgb(77, 77, 77);
+  border-top: 1px solid black;
+}

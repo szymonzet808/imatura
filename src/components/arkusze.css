@@ -1,0 +1,108 @@
+.main-screen {
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    overflow-y: scroll;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation: fade-in 0.35s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 0.35s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+}
+
+.main-screen-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+.arkusz {
+    width: 200px;
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    border: 1px solid rgba(220, 20, 60, 0.116);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.arkusz-rok {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.arkusz-miesiac {
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.btn-down {
+    width: 180px;
+    height: 30px;
+    margin: 5px;
+    background-color: #F8F6F8;
+    border: none;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    transition: all .2s;
+}
+
+.btn-down:hover {
+    background-color: rgba(238, 26, 69, 0.11);
+}
+
+.crims {
+    background-color: crimson;
+    color: white;
+    font-size: 1rem;
+    border-bottom: 3px solid black;
+    transition: all .1s;
+}
+
+.crims:hover {
+    background-color: rgb(196, 20, 55);
+}
+
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
