@@ -1,6 +1,7 @@
 .login-page {
     height: 350px;
     width: 500px;
+    max-width: 95%;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
