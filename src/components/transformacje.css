@@ -28,6 +28,10 @@
     margin-left: 5px;
 }
 
+.trans-word {
+    font-weight: bold;
+}
+
 .red {
     background-color: rgba(220, 20, 60, 0.199);
 }

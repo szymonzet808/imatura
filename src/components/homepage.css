@@ -24,6 +24,7 @@
 .homepage-left-panel>p {
     max-width: 340px;
     margin-top: 10px;
+    font-weight: 300;
 }
 
 #img-bigben {
@@ -56,9 +57,17 @@
     background-color: crimson;
     color: white;
     font-weight: bold;
+    cursor: pointer;
+    transition: all .1s;
 }
 
-.btn-newsletter:hover {}
+.btn-newsletter:hover {
+    background-color: rgb(189, 19, 53);
+}
+
+.btn-newsletter:active {
+    transform: scale(1.05);
+}
 
 @media screen and (max-width:900px) {
     .homepage {
@@ -95,5 +104,41 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
     }
 }

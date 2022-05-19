@@ -45,6 +45,11 @@
     border-radius: 3px 0px 0px 3px;
     margin-top: 10px;
     text-align: center;
+    font-size: 16px;
+}
+
+.log-input:focus {
+    border-color: crimson;
 }
 
 .login-page>h2 {
@@ -63,7 +68,10 @@
 
 @media screen and (max-width: 600px) {
     .login-page {
-        width: 400px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: -50px;
     }
 }
 
