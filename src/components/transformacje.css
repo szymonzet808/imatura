@@ -1,0 +1,74 @@
+.transformacja {
+    min-width: 300px;
+    max-width: 100%;
+    border: 1px solid rgba(220, 20, 60, 0.116);
+    width: 600px;
+    background-color: white;
+    padding: 10px 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.trans-eng,
+.transformacja>div {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.ans {
+    font-weight: 500;
+    color: crimson;
+    border-left: 1px solid crimson;
+    padding-left: 10px;
+    display: none;
+    margin-left: 5px;
+}
+
+.red {
+    background-color: rgba(220, 20, 60, 0.199);
+}
+
+.green {
+    background-color: rgb(22, 189, 0) !important;
+}
+
+.visible {
+    display: inline-block;
+}
+
+.transformacje {
+    flex-direction: column;
+    height: 100%;
+}
+
+.transformacja>button {
+    background-color: crimson;
+    color: white;
+    height: 38px;
+    border: none;
+    padding: 0px 15px;
+    cursor: pointer;
+    border-radius: 0px 3px 3px 0px;
+    transition: all .2s;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.transformacja>button:hover {
+    background-color: rgb(189, 19, 53);
+}
+
+.transformacja>div>input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 16px;
+}

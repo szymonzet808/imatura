@@ -8,7 +8,7 @@ const Header = () => {
 
     let navigate = useNavigate()
 
-    const { setSearch, logged, setLogged } = useContext(AppContext)
+    const { search, setSearch, logged, setLogged } = useContext(AppContext)
 
     const [mobile, setMobile] = useState(true)
     const [mobileMenu, setMobileMenu] = useState(false)

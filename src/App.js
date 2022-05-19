@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Header from './components/Header';
-import video from './media/bg.mp4'
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -13,6 +13,8 @@ import LoginPage from './components/LoginPage';
 import { AppContext } from './Context/AppContext'
 import Gramatyka from './components/Gramatyka';
 import HomePage from './components/HomePage';
+import Words from './components/Words';
+import Transformacje from './components/Transformacje';
 
 
 function App() {
@@ -35,16 +37,22 @@ function App() {
 
         </div> */}
         <Routes>
-          <Route path='/' element={<HomePage />}></Route>
+          <Route exact path='/' element={<HomePage />}></Route>
         </Routes>
         <Routes>
-          <Route path='/arkusze' element={<Arkusze />}></Route>
+          <Route exact path='/arkusze' element={<Arkusze />}></Route>
         </Routes>
         <Routes>
-          <Route path='/login' element={<LoginPage />}></Route>
+          <Route exact path='/login' element={<LoginPage />}></Route>
         </Routes>
         <Routes>
-          <Route path='/gramatyka' element={<Gramatyka />}></Route>
+          <Route exact path='/gramatyka' element={<Gramatyka />}></Route>
+        </Routes>
+        <Routes>
+          <Route exact path='/slowka' element={<Words />}></Route>
+        </Routes>
+        <Routes>
+          <Route exact path='/transformacje' element={<Transformacje />}></Route>
         </Routes>
       </BrowserRouter>
     </AppContext.Provider>
